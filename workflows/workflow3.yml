@@ -1,0 +1,11 @@
+name: push en carpeta ./src
+on:
+  push:
+  paths:
+  - src/**
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+    - name: pusheo en src
+      run: echo Se acaba de hacer un push en la carpeta ./src

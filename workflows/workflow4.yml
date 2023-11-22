@@ -1,0 +1,9 @@
+name: Ejecucuión manual
+on:
+  workflow_dispatch:
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+    - name: botón
+      run: echo Ejecución manual

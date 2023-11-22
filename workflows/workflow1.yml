@@ -1,0 +1,9 @@
+name: push
+on:
+  push:
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+    - name: pusheo
+      run: echo Se acaba de hacer un push

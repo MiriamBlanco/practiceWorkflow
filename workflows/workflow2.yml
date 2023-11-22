@@ -1,0 +1,11 @@
+name: push rama testing
+on:
+  push:
+    branches:
+    - 'testing'
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+    - name: pusheo en testing
+      run: echo Se acaba de hacer un push en la rama testing
