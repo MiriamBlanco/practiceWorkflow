@@ -1,0 +1,11 @@
+#Crear un workflow que se ejecute cuando cree o se borre una pull request.
+name: Ejecucuión crear borrar pull request
+on:
+  pull_request:
+    types: [opened,closed]
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo
+      run: echo Me he ejecutado cuando se ha abierto o se ha cerrado una pull request, no se diferenciarlo porque soy tonto xD
