@@ -1,11 +1,12 @@
+#Crear un workflow que se ejecute cuando se pushea algo en la carpeta ./src
 name: push en carpeta ./src
 on:
   push:
-  paths:
-  - src/**
+    paths:
+      - '**/.src/**'
 jobs:
   job01:
     runs-on: ubuntu-latest
     steps:
-    - name: pusheo en src
+    - name: echo
       run: echo Se acaba de hacer un push en la carpeta ./src

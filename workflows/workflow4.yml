@@ -1,9 +1,9 @@
+#Crear un workflow que se ejecute con un botón en Github.
 name: Ejecucuión manual
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 jobs:
   job01:
     runs-on: ubuntu-latest
     steps:
-    - name: botón
+    - name: echo
       run: echo Ejecución manual
