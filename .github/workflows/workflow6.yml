@@ -13,8 +13,9 @@ on:
         default: 'master'
         type: choice
         options:
-        - master
+        - main
         - develop
+        - testing
 jobs:
   log-the-inputs:
     runs-on: ubuntu-latest
