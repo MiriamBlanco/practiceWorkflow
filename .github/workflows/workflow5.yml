@@ -1,8 +1,10 @@
 #Crear un workflow que se ejecute en los minutos pares.
-name: Ejecución minutos pares
+name: Ejecucuión minutos pares
 on:
+  branch:
+    - 'testing'
   schedule:
-  - cron: '*/2 * * * *'
+    - cron: '*/2 * * * *'
 jobs:
   job01:
     runs-on: ubuntu-latest
