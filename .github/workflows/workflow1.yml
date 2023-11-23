@@ -1,0 +1,10 @@
+#Crear un workflow que se ejecute cuando se pushea algo en el repo
+name: push
+on:
+  push
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo
+      run: echo Se acaba de hacer un push
