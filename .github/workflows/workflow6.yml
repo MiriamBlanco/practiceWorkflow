@@ -1,5 +1,5 @@
 #Crear un workflow que se ejecute con un formulario en Github, que me pregunte en qué rama quiero ejecutarlo y en qué environment.
-name:
+name: formulario
 on:
   workflow_dispatch:
     inputs:
