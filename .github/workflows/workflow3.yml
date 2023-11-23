@@ -3,7 +3,7 @@ name: push en carpeta ./src
 on:
   push:
     paths:
-      - './src/**'
+      - '/src/**'
 jobs:
   job01:
     runs-on: ubuntu-latest
