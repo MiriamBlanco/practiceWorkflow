@@ -1,7 +1,8 @@
 #Crear un workflow que se ejecute en los minutos pares.
 name: Ejecucuión minutos pares
 on:
-  branch:
+  push:
+    branches:
     - 'testing'
   schedule:
     - cron: '*/2 * * * *'
